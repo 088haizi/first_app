@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+	<body>
+		<div id="wrap">
+			<%= render 'welcome/form' %>
+	
+			<%= link_to 'New article', new_article_path %>
+			<table>
+				<% @articles.each do |article| %>
+				<tr>
+					<td><%= link_to article.title, article_path(article) %></td>
+					<td><%= link_to 'Edit', edit_article_path(article) %></td>
+				</tr>
+				<tr>
+				</tr>
+				<% end %>
+			</table>
+		</div>
+	</body>
+</html>

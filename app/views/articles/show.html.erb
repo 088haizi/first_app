@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Test WMD Page</title>
+		
+		<link rel="stylesheet" type="text/css" href="wmd.css" />
+		
+		<script type="text/javascript" src="showdown.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<%= render 'welcome/form' %>
+			<div id="post">
+				<h2 class="entry-title"><%= @article.title %>
+				<div class="entry-content">
+					<!--<p><%= @article.text %></p>-->
+					<p><%= @article.text %></p>
+					<br/><br/>
+		        	<p align="right" class="small">April 30, 2014, 1:40am</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
